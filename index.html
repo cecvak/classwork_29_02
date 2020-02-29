@@ -3,9 +3,45 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/style.css">
     <title>Form</title>
 </head>
-<body>
+<body class="page"> 
     
+    <section class="section_box">
+        <div class="box_form">
+            <form action="" class="card_form">
+                <div class="form_top_line">
+                    <label for="cardno" class="label">CARD NUMBER</label><br>
+                    <input type="number" name="cardno" id="cardno" class="inputbox inputbox_long" placeholder="0000 0000 0000 0000" required maxlength="16" minlength="16" autofocus>
+                </div>
+                <div class="form_middle_line">
+                    <div class="date">
+                        <label for="date" class="label">MM/YY</label><br>
+                        <input type="text" name="date" id="date" class="inputbox inputbox_middle" placeholder="00/00" required>
+                    </div>
+                    <div class="cvv">
+                        <label for="cvv" class="label">CVV CODE</label><br>
+                        <input type="number" name="cvv" id="cvv" class="inputbox inputbox_middle" placeholder="00/00" required maxlength="3">
+                    </div>
+                </div>
+                <div class="form_bottom_line">
+                    <label for="name" class="label">CARDHOLDER FULL NAME</label><br>
+                    <input type="text" name="name" id="name" class="inputbox inputbox_long" placeholder="Name Surname" required><br>
+                </div>
+                <input type="submit" value="PAY NOW" class="button">
+                
+            </form>
+        </div>
+        <div class="box_side">
+            <img src="images/plant.png" alt="Plant" class="image">
+        </div>
+
+
+    </section>
+
+
+
 </body>
 </html>
